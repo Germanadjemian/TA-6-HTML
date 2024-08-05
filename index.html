@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuesta</title>
+</head>
+<body>
+    <h1>Formulario de Encuesta</h1>
+    
+    <form action="ruta-del-servidor" method="post"> 
+        <label for="edad">Rango de Edad:</label>
+        <select id="edad" name="edad">
+            <option value="18-25">18-25</option>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+            <option value="46-60">46-60</option>
+            <option value="60+">60+</option>
+        </select><br><br>
+
+       <!-- <label for="intereses">Intereses:</label>
+        <select id="intereses" name="intereses[]" multiple>
+            <option value="deportes">Deportes</option>
+            <option value="musica">Música</option>
+            <option value="tecnologia">Tecnología</option>
+            <option value="arte">Arte</option>
+            <option value="ciencia">Ciencia</option>
+        </select>--> <br><br>
+
+        <!--Esto del action y method tengo que revisar bien que hace-->
+        <label>Género:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br>
+        
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
